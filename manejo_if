@@ -1,0 +1,151 @@
+//ejercicio1
+Random dice = new Random();
+int num1=dice.Next(1,7);
+int num2=dice.Next(1,7);
+int num3=dice.Next(1,7);
+int totalnum=num1+num2+num3;
+
+Console.WriteLine("La sumatoria total: "+num1+" + "+num2+" + "+num3+"= "+totalnum);
+
+if (totalnum > 14)
+{
+    Console.WriteLine("Tu Ganaste!");
+}
+
+if (totalnum < 15)
+{
+    Console.WriteLine("Lo siento, no es tu dia de suerte. Perdiste :(");
+}
+
+
+Console.WriteLine("");
+Console.WriteLine("");
+Console.WriteLine("");
+
+
+//ejercicio2
+string mensaaje = "Hola Estoy En Un Feriado Estudiando";
+//Resultado De Lo Que Muestra
+bool muestra = mensaaje.Contains("Feriado");
+Console.WriteLine(muestra);
+//Usando If
+if (mensaaje.Contains("Estudiando"))
+{
+    Console.WriteLine("Si Está Tu Palabra");
+}
+
+//ejercicio4
+Random dice = new Random();
+int num1=dice.Next(1,7);
+int num2=dice.Next(1,7);
+int num3=dice.Next(1,7);
+int totalnum=num1+num2+num3;
+//Igualdad, con que se afirme una entra al if
+if ((num1 == num2) || (num2 == num3) || (num1 == num3))
+{
+    Console.WriteLine("Has Obtenido Dos Puntos Adicionales, Por Tus Dados Iguales");
+    totalnum += 2;
+}
+
+//MainEjercicio
+Random dice = new Random();
+int num1=dice.Next(1,7);
+int num2=dice.Next(1,7);
+int num3=dice.Next(1,7);
+int totalnum=num1+num2+num3;
+//Igualdad, con que se afirme una entra al if
+if ((num1 == num2) || (num2 == num3) || (num1 == num3))
+{
+    Console.WriteLine("Has Obtenido Dos Puntos Adicionales, Por Tus Dados Iguales");
+    totalnum += 2;
+}
+//Se Debe Cumplir Ambas condiciones para entrar al if
+if ((num1 == num2) && (num2 == num3)) 
+{
+    Console.WriteLine("Tu Obtienes 6 puntos, por los tres dados iguales");
+    totalnum += 6;
+}
+
+if (totalnum > 14)
+{
+    Console.WriteLine("Tu Ganaste!");
+}
+
+if (totalnum < 15)
+{
+    Console.WriteLine("Lo siento, no es tu dia de suerte. Perdiste :(");
+}
+//main ejericcio aplicando else
+Random dice = new Random();
+int num1=dice.Next(1,7);
+int num2=dice.Next(1,7);
+int num3=dice.Next(1,7);
+int totalnum=num1+num2+num3;
+//Igualdad, con que se afirme una entra al if
+if ((num1 == num2) || (num2 == num3) || (num1 == num3))
+{
+    if ((num1 == num2) && (num2 == num3)) 
+{
+    Console.WriteLine("Tu Obtienes 6 puntos, por los tres dados iguales");
+    totalnum += 6;
+}
+else
+{
+
+    Console.WriteLine("Has Obtenido Dos Puntos Adicionales, Por Tus Dados Iguales");
+    totalnum += 2;
+}
+    
+}
+
+if (totalnum > 14)
+{
+    Console.WriteLine("Tu Ganaste!");
+}
+
+else
+{
+    Console.WriteLine("Lo siento, no es tu dia de suerte. Perdiste :(");
+}
+
+//Practica Mia
+Random random = new Random();
+int diasrestanteexp = random.Next(12);
+int descuentototal=0;
+Console.WriteLine(diasrestanteexp);
+
+ if (diasrestanteexp <= 10)
+ {
+    if ((diasrestanteexp <= 5)&&(diasrestanteexp >= 2) )
+    {
+    Console.WriteLine("Your subscription expires in "+ diasrestanteexp+" days.Renew now and save 10%!");
+    descuentototal=10;
+    }
+    else
+    {
+        if (diasrestanteexp == 1)
+        {
+        Console.WriteLine("Your subscription expires within a day! Renew now and save 20%!");
+        descuentototal=20;
+        }
+        else
+        {
+            if (diasrestanteexp == 0)
+            {
+            Console.WriteLine("Your subscription has expired.");
+            }
+            else
+            {
+            Console.WriteLine("Your subscription will expire soon. Renew now!");
+
+            }
+        }
+            }
+
+}
+
+if (descuentototal > 0)
+{
+    Console.WriteLine($"Renew now and save {descuentototal}%.");
+
+}
