@@ -1,0 +1,5 @@
+int num1 = 500;
+int num2 = 600;
+int nummayor=Math.Max(num1,num2);
+
+Console.WriteLine(nummayor);
