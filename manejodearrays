@@ -1,0 +1,43 @@
+//Ejercicio 1 Declarar Matriz Y Mostrar por pantalla  
+string[] fraudulentOrderIDs = new string[3];
+fraudulentOrderIDs[0] = "a";
+fraudulentOrderIDs[1] = "b";
+fraudulentOrderIDs[2] = "c";
+
+Console.WriteLine(fraudulentOrderIDs[0]+fraudulentOrderIDs[1]+fraudulentOrderIDs[2]);
+
+//Ejercicio 2 Declarar La Matriz Y asignar valores ahi mismo
+string[] fraudulentOrderIDs = [ "A123", "B456", "C789" ];
+
+
+Console.WriteLine("Primer Valor:"+fraudulentOrderIDs[0]);
+Console.WriteLine("Segundo Valor:"+fraudulentOrderIDs[1]);
+Console.WriteLine("Tercero Valor:"+fraudulentOrderIDs[2]);
+fraudulentOrderIDs[2] = "HOLA";
+Console.WriteLine("Revalorar tercero Valor:"+fraudulentOrderIDs[2]);
+Console.WriteLine($"Esta es la cantidad de cuadro que existe {fraudulentOrderIDs.Length}");
+
+/Ejercicio 3 Recorrido en bucle de una matriz con "foreach"
+int[] numejericio = [ 1,2,3,4,5,6,7,8,9,10 ];
+int sum=0;
+int actual=0;
+foreach (int num in numejericio)
+{
+    sum+=num;
+    actual++;
+    Console.WriteLine("Estamos en el arreglo "+actual+":"+num+", llevando una suma total:"+sum);
+}
+Console.WriteLine("La Sumatoria es:"+sum);
+
+//MainEjercicion
+string[] pedido = ["B123","C234","A345","C15","B177","G3003","C235","B179"];
+int sum=0;
+foreach (string ped in pedido)
+{
+    if (ped.StartsWith("B")){
+      sum++;
+    Console.WriteLine(ped);
+    }
+}
+Console.WriteLine("El numero total de pedidos malos "+sum);
+t
