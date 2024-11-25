@@ -1,0 +1,67 @@
+//Ejercicio 1 desde 0 hasta 9
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+}
+//Ejercicio 2 Desde 9 hasta 0
+for (int i = 10; i >= 0; i--)
+{
+    Console.WriteLine(i);
+}
+
+//Ejericio 3 va de 3 en 3
+for (int i = 0; i < 10; i += 3)
+{
+    Console.WriteLine(i);
+}
+//Ejericio 4 cuando llega al 7 rompe se detiene
+for (int i = 0; i < 10; i++)
+{
+    Console.WriteLine(i);
+    if (i == 7) break;
+}
+//Ejericio 5 un arreglo con nombre dentro el cual lo recorre y va mostrando
+string[] names = { "Alex", "Eddie", "David", "Michael" };
+for (int i = names.Length - 1; i >= 0; i--)
+{
+    Console.WriteLine(names[i]);
+}
+
+//Ejericio 6 Recorre el arreglo encuentra a David y le asigna un nuevo valor, luego recorre el arreglo con foreach y muestra por pantalla
+string[] names = { "Alex", "Eddie", "David", "Michael" };
+
+for (int i = 0; i < names.Length; i++)
+{
+    if (names[i] == "David")
+    {
+        names[i] = "Sammy";
+    }
+}
+
+foreach (var name in names)
+{
+    Console.WriteLine(name);
+}
+
+//Ejericio 7
+//Estas son las reglas de FizzBuzz que necesita implementar en el proyecto de código:
+
+//Valores de salida de 1 a 100, un número por línea, dentro del bloque de código de una instrucción de iteración.
+//Si el valor actual es divisible por 3, se imprime el término Fizz junto al número.
+//Si el valor actual es divisible por 5, se imprime el término Buzz junto al número.
+//Si el valor actual es divisible por 3 y por 5, se imprime el término FizzBuzz junto al número.
+for (int i = 0; i < 100; i++)
+{
+   if (((i+1) % 3 == 0) && ((i+1) % 5 == 0))
+   {Console.WriteLine((i+1)+" - FizzBuzz ");
+   }
+    else if((i+1) % 3 == 0){
+        Console.WriteLine((i+1)+" - Fizz");
+    }
+    else if((i+1) % 5 == 0){
+        Console.WriteLine((i+1)+" - Buzz");
+    }
+    else {
+        Console.WriteLine((i+1)+" - ");
+    }
+}
